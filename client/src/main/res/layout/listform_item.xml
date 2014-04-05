@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivImg"
+        android:src="@drawable/ic_form"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvFormName"
+        android:editable="false"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/ivImg" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:id="@+id/ibtnDelete"
+        android:onClick="onButtonClick"
+        android:baselineAlignBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/btn_delete" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ibtnUpload"
+        android:onClick="onButtonClick"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/ibtnDelete"
+        android:baselineAlignBottom="false"
+        android:layout_alignParentEnd="false"
+        android:background="@drawable/btn_upload" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFormTitle"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tvFormName"
+        android:layout_marginLeft="11dp" />
+
+</RelativeLayout>
