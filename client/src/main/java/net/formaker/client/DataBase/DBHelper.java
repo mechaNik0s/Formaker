@@ -11,7 +11,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DBHelper extends SQLiteOpenHelper {
 
     public static final String DB_NAME = "formaker.db";
-    public static final int DB_VERSION = 18;
+    public static final int DB_VERSION = 19;
 
     // определяем таблицу форм
     public static final String TABLE_FORM = "Form";

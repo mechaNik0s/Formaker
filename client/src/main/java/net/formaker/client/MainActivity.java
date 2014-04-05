@@ -103,8 +103,8 @@ public class MainActivity extends FragmentActivity implements LoaderCallbacks<Cu
 
     public class MySimpleCursorAdapter extends SimpleCursorAdapter {
 
-       // Context context;
-      //  Cursor cursor;
+        // Context context;
+        //  Cursor cursor;
 
         public MySimpleCursorAdapter(Context contxt, int layout, Cursor c, String[] from, int[] to, int flags) {
             super(contxt, layout, c, from, to, flags);
